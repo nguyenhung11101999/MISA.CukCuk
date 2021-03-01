@@ -1,0 +1,34 @@
+﻿.paging-center{
+    display:flex;
+    align-items:center;
+}
+    .paging-center .btn-page {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        cursor:pointer;
+        
+    }
+    .paging-center .page-number {
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background-color: #d2d2d2;
+        font-family: GoogleSans-Regular;
+    }
+    .paging-center .page-icon{
+        background-position:center;
+        background-size:contain;
+    }
+.first-page {
+        background-image: url('/content//icon/btn-firstpage.svg');
+    }
+.prev-page {
+    background-image: url('/content//icon/btn-prev-page.svg');
+}
+.next-page {
+    background-image: url('/content//icon/btn-next-page.svg');
+}
+.last-page {
+    background-image: url('/content//icon/btn-lastpage.svg');
+}

@@ -1,0 +1,44 @@
+﻿/*
+    Dialog hiển thị danh sách lỗi
+*/
+/*
+    Kích thước
+*/
+
+.dialog-error {
+    width: 500px;
+    min-height: 230px;
+    padding-top: 24px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+    .dialog-error .title {
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 24px;
+        margin-bottom: 16px;
+    }
+
+
+    .dialog-error .list-error {
+        padding-left: 16px;
+    }
+
+.list-error .error {
+    height: 30px;
+    min-width: 200px;
+    background-image: url('/content/icon/warning-icon.png');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: left;
+    line-height: 30px;
+    background-size: 20px;
+    font-size: 13px;
+}
+.error-bottom{
+    margin-left:320px;
+}
+#dialog-cancel-error{
+    margin-left:320px;
+}

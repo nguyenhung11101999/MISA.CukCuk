@@ -1,0 +1,72 @@
+﻿/*
+    Định dạng cho tất cả button
+*/
+.m-btn {
+    display: flex;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: GoogleSans-Regular;
+    padding: 0px 16px;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+    .m-btn span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .m-btn .btn-text {
+        margin-left: 8px;
+    }
+
+/*
+    Button thêm, sửa, lưu
+*/
+.btn-add-save {
+    background: #019160;
+}
+
+    .btn-add-save:hover {
+        background-color: #2fbe8e;
+    }
+
+
+/*
+    Button hủy
+*/
+.btn-cancel {
+    background-color: #bbb;
+}
+
+    .btn-cancel:hover {
+        background-color: #dadce0;
+    }
+
+
+
+/*
+    Button refresh
+*/
+.btn-refresh {
+    background-image: url(/content/icon/refresh.png);
+    background-repeat: no-repeat;
+    border: 1px solid #bbb;
+    padding: 0px 24px;
+    text-align: center;
+    background-position: center;
+}
+
+/*
+    Button xóa
+*/
+.btn-delete {
+    background-color: #f65454;
+}
+    .btn-delete:hover {
+        background-color: #ff8566;
+    }

@@ -1,0 +1,124 @@
+﻿/**
+    Dialog employee
+*/
+.m-dialog {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+    .m-dialog .dialog-modal {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        opacity: .4;
+        z-index: 4;
+    }
+
+    .m-dialog .dialog-content {
+        width: 700px;
+        height: 550px;
+        z-index: 10;
+    }
+
+/*
+    Dialog header
+*/
+.dialog-content .dialog-header {
+    padding: 24px 24px 0px 24px;
+    display: flex;
+}
+
+    .dialog-content .dialog-header .dialog-header-title {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+/*
+    Dialog body
+*/
+.dialog-content .dialog-body {
+    padding: 0px 24px;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+/*upload ảnh*/
+.body-infor {
+    display: flex;
+}
+
+.upload-photo {
+    text-align: center;
+    width: 220px;
+}
+
+.upload-contain {
+    width: 180px;
+    height: 180px;
+    background-image: url('../../content/img/default-avatar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid #b5b3b3;
+    border-radius: 50%;
+}
+
+    .upload-contain #photo {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+.border-red {
+    border: 1px solid red;
+}
+
+.infor-left {
+    display: flex;
+}
+/**
+    Phần nhập liệu
+*/
+.m-row{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.m-row .m-control select {
+    padding: 10px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbb;
+    
+}
+/**
+    Phần footer dialog
+*/
+.dialog-footer button {
+    width: 100px;
+}
+
+.dialog-footer .footer-right {
+    display: flex;
+}
+
+    .dialog-footer .footer-right .btn-cancel {
+        margin-right: 10px;
+        color: #000;
+    }
+
+        .dialog-footer .footer-right .btn-cancel span {
+            width: 100%;
+            text-align: center;
+        }
+
+#btn-delete-employee {
+    visibility: hidden;
+}
+
+#txtSalary {
+    text-align: right;
+}

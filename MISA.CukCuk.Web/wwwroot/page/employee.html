@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhân viên</title>
+    <link href="/css/common/common.css" rel="stylesheet" />
+    <link href="/css/common/main.css" rel="stylesheet" />
+    <link href="/css/common/header.css" rel="stylesheet" />
+    <link href="/css/common/navbar.css" rel="stylesheet" />
+    <link href="/css/common/toolbar.css" rel="stylesheet" />
+    <link href="/css/common/content.css" rel="stylesheet" />
+    <link href="/css/common/icon.css" rel="stylesheet" />
+    <link href="/css/common/button.css" rel="stylesheet" />
+    <link href="/css/common/input.css" rel="stylesheet" />
+    <link href="/css/common/grid.css" rel="stylesheet" />
+    <link href="/css/page/customer.css" rel="stylesheet" />
+    <link href="/content/font/fontawesome-5.15.1/css/all.css" rel="stylesheet" />
+    <link href="/css/common/paging-bar.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo-site">
+            <!-- Logo -->
+            <div class="logo-box">
+                <div class="toggle-icon"></div>
+                <div class="cukcuk-logo"></div>
+            </div>
+        </div>
+        <!-- Danh mục navbar -->
+        <div class="navbar-content">
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-dashboard"></div>
+                <div class="nav-item-text">Tổng quan</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-report"></div>
+                <div class="nav-item-text">Báo cáo</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-document"></div>
+                <div class="nav-item-text">Mua hàng</div>
+            </div>
+
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-employee"></div>
+                <div class="nav-item-text">
+                    <a href="customer.html"> Danh mục khách hàng</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-employee"></div>
+                <div class="nav-item-text">
+                    <a href="employee.html">
+                        Danh mục nhân viên
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <div class="nav-item-icon m-icon-setting"></div>
+                <div class="nav-item-text">Thiết lập</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <select class="header-select">
+            <option value="Nhà hàng hải dương">Nhà hàng Hải Dương</option>
+        </select>
+        <div class="header-infor">
+            <div class="infor-avatar"></div>
+            <div class="infor-name"><p>Nguyễn Mạnh Hùng</p></div>
+            <div class="infor-option"></div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="header-content">
+            <div class="title">Danh sách nhân viên</div>
+            <div class="page-feature">
+                <button class="m-btn btn-add-save" id="btn-add">
+                    <div class="icon-add"></div>
+                    <div class="m-btn-action btn-text">Thêm nhân viên</div>
+                </button>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="filter-left">
+                <input class="icon-search input-search" type="text" style="width:200px;" value="" placeholder="Tìm kiếm theo mã, tên nhân viên" />
+            </div>
+            <div class="filter-right">
+                <button class="m-btn btn-refresh" id="btn-refresh"></button>
+            </div>
+        </div>
+        <div class="grid grid-customer">
+            <table class="scrollTable" border="0" cellpadding="0" width="100%">
+                <colgroup>
+                    <col style="width: 150px;" />
+                    <col style="width: 200px;" />
+                    <col style="width: 100px;" />
+                    <col style="width: 100px;" />
+                    <col style="width: 150px;" />
+                    <col style="width: 50px;" />
+                    <col style="width: 150px;" />
+                    <col style="width: 150px;" />
+                    <col style="width: 150px; text-align: right !important" />
+                    <col style="width: 150px; text-align: right !important " />
+                    <col style="width: 350px;" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th fieldName="EmployeeCode">Ma nhan vien</th>
+                        <th fieldName="FullName">Ho ten</th>
+                        <th fieldName="GenderName">Gioi tinh</th>
+                        <th fieldName="DateOfBirth" formatType="ddmmyyy">Ngay sinh</th>
+                        <th fieldName="PhoneNumber">So dien thoai</th>
+                        <th fieldName="Email">Email</th>
+                        <th fieldName="PositionName">Chuc vu</th>
+                        <th fieldName="DepartmentName">Phong ban</th>
+                        <th fieldName="Salary" formatType="Money">Muc luong</th>
+                        <th fieldName="Address">Dia chi</th>
+                        <th fieldName="WorkStatusName">Tinh trang cong viec</th>
+                    </tr>
+                </thead>
+                <tbody class="scrollContent">
+                </tbody>
+            </table>
+        </div>
+        <div class="paging-bar">
+            <div class="paging-left"><label>Hiển thị 1-10/1000 nhân viên</label></div>
+            <div class="paging-center">
+                <div class="btn-page page-icon first-page"></div>
+                <div class="btn-page page-icon prev-page"></div>
+                <button class="btn-page  page-number" style="background-color:#01b075;color:#fff;">1</button>
+                <button class="btn-page page-number">2</button>
+                <button class="btn-page page-number">3</button>
+                <button class="btn-page page-number">4</button>
+                <div class="btn-page page-icon next-page"></div>
+                <div class="btn-page page-icon last-page"></div>
+            </div>
+            <div class="paging-right"><label>10 nhân viên/trang</label></div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery-3.5.1.min.js"></script>
+    <script src="/js/common/common.js"></script>
+    <script src="/js/common/base.js"></script>
+    <script src="/js/page/employee.js"></script>
+</body>
+</html>
